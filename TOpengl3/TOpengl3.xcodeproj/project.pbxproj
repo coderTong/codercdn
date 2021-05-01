@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACA4F28D25825C0F00CA0609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA4F28C25825C0F00CA0609 /* Assets.xcassets */; };
+		ACA4F29025825C0F00CA0609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA4F28E25825C0F00CA0609 /* Main.storyboard */; };
+		ACA4F29E25825C1000CA0609 /* TOpengl3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F29D25825C1000CA0609 /* TOpengl3Tests.m */; };
+		ACA4F2A925825C1000CA0609 /* TOpengl3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F2A825825C1000CA0609 /* TOpengl3UITests.m */; };
+		ACA4F2CE25825C5900CA0609 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA4F2BC25825C5900CA0609 /* libGLTools.a */; };
+		ACA4F2CF25825C5900CA0609 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ACA4F2CD25825C5900CA0609 /* main.cpp */; };
+		ACA4F2D525825C6400CA0609 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA4F2D425825C6400CA0609 /* GLUT.framework */; };
+		ACA4F2D725825C6B00CA0609 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA4F2D625825C6B00CA0609 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACA4F29A25825C1000CA0609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA4F27B25825C0D00CA0609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4F28225825C0D00CA0609;
+			remoteInfo = TOpengl3;
+		};
+		ACA4F2A525825C1000CA0609 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACA4F27B25825C0D00CA0609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA4F28225825C0D00CA0609;
+			remoteInfo = TOpengl3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACA4F28325825C0D00CA0609 /* TOpengl3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TOpengl3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4F28C25825C0F00CA0609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACA4F28F25825C0F00CA0609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACA4F29125825C0F00CA0609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA4F29425825C0F00CA0609 /* TOpengl3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TOpengl3.entitlements; sourceTree = "<group>"; };
+		ACA4F29925825C1000CA0609 /* TOpengl3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOpengl3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4F29D25825C1000CA0609 /* TOpengl3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOpengl3Tests.m; sourceTree = "<group>"; };
+		ACA4F29F25825C1000CA0609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA4F2A425825C1000CA0609 /* TOpengl3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOpengl3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACA4F2A825825C1000CA0609 /* TOpengl3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOpengl3UITests.m; sourceTree = "<group>"; };
+		ACA4F2AA25825C1000CA0609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACA4F2BC25825C5900CA0609 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		ACA4F2BE25825C5900CA0609 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		ACA4F2BF25825C5900CA0609 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		ACA4F2C025825C5900CA0609 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		ACA4F2C125825C5900CA0609 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		ACA4F2C225825C5900CA0609 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		ACA4F2C325825C5900CA0609 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		ACA4F2C425825C5900CA0609 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		ACA4F2C525825C5900CA0609 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		ACA4F2C625825C5900CA0609 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		ACA4F2C725825C5900CA0609 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		ACA4F2C925825C5900CA0609 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		ACA4F2CA25825C5900CA0609 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		ACA4F2CB25825C5900CA0609 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		ACA4F2CC25825C5900CA0609 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		ACA4F2CD25825C5900CA0609 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ACA4F2D425825C6400CA0609 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		ACA4F2D625825C6B00CA0609 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACA4F28025825C0D00CA0609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F2D525825C6400CA0609 /* GLUT.framework in Frameworks */,
+				ACA4F2CE25825C5900CA0609 /* libGLTools.a in Frameworks */,
+				ACA4F2D725825C6B00CA0609 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F29625825C1000CA0609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F2A125825C1000CA0609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACA4F27A25825C0D00CA0609 = {
+			isa = PBXGroup;
+			children = (
+				ACA4F28525825C0D00CA0609 /* TOpengl3 */,
+				ACA4F29C25825C1000CA0609 /* TOpengl3Tests */,
+				ACA4F2A725825C1000CA0609 /* TOpengl3UITests */,
+				ACA4F28425825C0D00CA0609 /* Products */,
+				ACA4F2D325825C6400CA0609 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACA4F28425825C0D00CA0609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F28325825C0D00CA0609 /* TOpengl3.app */,
+				ACA4F29925825C1000CA0609 /* TOpengl3Tests.xctest */,
+				ACA4F2A425825C1000CA0609 /* TOpengl3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACA4F28525825C0D00CA0609 /* TOpengl3 */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F2BD25825C5900CA0609 /* include */,
+				ACA4F2BC25825C5900CA0609 /* libGLTools.a */,
+				ACA4F2CD25825C5900CA0609 /* main.cpp */,
+				ACA4F28C25825C0F00CA0609 /* Assets.xcassets */,
+				ACA4F28E25825C0F00CA0609 /* Main.storyboard */,
+				ACA4F29125825C0F00CA0609 /* Info.plist */,
+				ACA4F29425825C0F00CA0609 /* TOpengl3.entitlements */,
+			);
+			path = TOpengl3;
+			sourceTree = "<group>";
+		};
+		ACA4F29C25825C1000CA0609 /* TOpengl3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F29D25825C1000CA0609 /* TOpengl3Tests.m */,
+				ACA4F29F25825C1000CA0609 /* Info.plist */,
+			);
+			path = TOpengl3Tests;
+			sourceTree = "<group>";
+		};
+		ACA4F2A725825C1000CA0609 /* TOpengl3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F2A825825C1000CA0609 /* TOpengl3UITests.m */,
+				ACA4F2AA25825C1000CA0609 /* Info.plist */,
+			);
+			path = TOpengl3UITests;
+			sourceTree = "<group>";
+		};
+		ACA4F2BD25825C5900CA0609 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F2BE25825C5900CA0609 /* GLBatchBase.h */,
+				ACA4F2BF25825C5900CA0609 /* math3d.h */,
+				ACA4F2C025825C5900CA0609 /* GLTriangleBatch.h */,
+				ACA4F2C125825C5900CA0609 /* GLBatch.h */,
+				ACA4F2C225825C5900CA0609 /* GLMatrixStack.h */,
+				ACA4F2C325825C5900CA0609 /* GLFrame.h */,
+				ACA4F2C425825C5900CA0609 /* GLFrustum.h */,
+				ACA4F2C525825C5900CA0609 /* GLGeometryTransform.h */,
+				ACA4F2C625825C5900CA0609 /* GLShaderManager.h */,
+				ACA4F2C725825C5900CA0609 /* StopWatch.h */,
+				ACA4F2C825825C5900CA0609 /* GL */,
+				ACA4F2CC25825C5900CA0609 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		ACA4F2C825825C5900CA0609 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F2C925825C5900CA0609 /* glxew.h */,
+				ACA4F2CA25825C5900CA0609 /* wglew.h */,
+				ACA4F2CB25825C5900CA0609 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		ACA4F2D325825C6400CA0609 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4F2D625825C6B00CA0609 /* OpenGL.framework */,
+				ACA4F2D425825C6400CA0609 /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACA4F28225825C0D00CA0609 /* TOpengl3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4F2AD25825C1000CA0609 /* Build configuration list for PBXNativeTarget "TOpengl3" */;
+			buildPhases = (
+				ACA4F27F25825C0D00CA0609 /* Sources */,
+				ACA4F28025825C0D00CA0609 /* Frameworks */,
+				ACA4F28125825C0D00CA0609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TOpengl3;
+			productName = TOpengl3;
+			productReference = ACA4F28325825C0D00CA0609 /* TOpengl3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACA4F29825825C1000CA0609 /* TOpengl3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4F2B025825C1000CA0609 /* Build configuration list for PBXNativeTarget "TOpengl3Tests" */;
+			buildPhases = (
+				ACA4F29525825C1000CA0609 /* Sources */,
+				ACA4F29625825C1000CA0609 /* Frameworks */,
+				ACA4F29725825C1000CA0609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4F29B25825C1000CA0609 /* PBXTargetDependency */,
+			);
+			name = TOpengl3Tests;
+			productName = TOpengl3Tests;
+			productReference = ACA4F29925825C1000CA0609 /* TOpengl3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACA4F2A325825C1000CA0609 /* TOpengl3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA4F2B325825C1000CA0609 /* Build configuration list for PBXNativeTarget "TOpengl3UITests" */;
+			buildPhases = (
+				ACA4F2A025825C1000CA0609 /* Sources */,
+				ACA4F2A125825C1000CA0609 /* Frameworks */,
+				ACA4F2A225825C1000CA0609 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACA4F2A625825C1000CA0609 /* PBXTargetDependency */,
+			);
+			name = TOpengl3UITests;
+			productName = TOpengl3UITests;
+			productReference = ACA4F2A425825C1000CA0609 /* TOpengl3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACA4F27B25825C0D00CA0609 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					ACA4F28225825C0D00CA0609 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					ACA4F29825825C1000CA0609 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ACA4F28225825C0D00CA0609;
+					};
+					ACA4F2A325825C1000CA0609 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = ACA4F28225825C0D00CA0609;
+					};
+				};
+			};
+			buildConfigurationList = ACA4F27E25825C0D00CA0609 /* Build configuration list for PBXProject "TOpengl3" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACA4F27A25825C0D00CA0609;
+			productRefGroup = ACA4F28425825C0D00CA0609 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA4F28225825C0D00CA0609 /* TOpengl3 */,
+				ACA4F29825825C1000CA0609 /* TOpengl3Tests */,
+				ACA4F2A325825C1000CA0609 /* TOpengl3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACA4F28125825C0D00CA0609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F28D25825C0F00CA0609 /* Assets.xcassets in Resources */,
+				ACA4F29025825C0F00CA0609 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F29725825C1000CA0609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F2A225825C1000CA0609 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACA4F27F25825C0D00CA0609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F2CF25825C5900CA0609 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F29525825C1000CA0609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F29E25825C1000CA0609 /* TOpengl3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACA4F2A025825C1000CA0609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA4F2A925825C1000CA0609 /* TOpengl3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACA4F29B25825C1000CA0609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4F28225825C0D00CA0609 /* TOpengl3 */;
+			targetProxy = ACA4F29A25825C1000CA0609 /* PBXContainerItemProxy */;
+		};
+		ACA4F2A625825C1000CA0609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACA4F28225825C0D00CA0609 /* TOpengl3 */;
+			targetProxy = ACA4F2A525825C1000CA0609 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACA4F28E25825C0F00CA0609 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACA4F28F25825C0F00CA0609 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACA4F2AB25825C1000CA0609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ACA4F2AC25825C1000CA0609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		ACA4F2AE25825C1000CA0609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TOpengl3/TOpengl3.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TOpengl3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TOpengl3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openglxy.TOpengl3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACA4F2AF25825C1000CA0609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TOpengl3/TOpengl3.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TOpengl3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TOpengl3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openglxy.TOpengl3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACA4F2B125825C1000CA0609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TOpengl3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openglxy.TOpengl3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOpengl3.app/Contents/MacOS/TOpengl3";
+			};
+			name = Debug;
+		};
+		ACA4F2B225825C1000CA0609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TOpengl3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openglxy.TOpengl3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TOpengl3.app/Contents/MacOS/TOpengl3";
+			};
+			name = Release;
+		};
+		ACA4F2B425825C1000CA0609 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TOpengl3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openglxy.TOpengl3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TOpengl3;
+			};
+			name = Debug;
+		};
+		ACA4F2B525825C1000CA0609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TOpengl3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openglxy.TOpengl3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TOpengl3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACA4F27E25825C0D00CA0609 /* Build configuration list for PBXProject "TOpengl3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F2AB25825C1000CA0609 /* Debug */,
+				ACA4F2AC25825C1000CA0609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4F2AD25825C1000CA0609 /* Build configuration list for PBXNativeTarget "TOpengl3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F2AE25825C1000CA0609 /* Debug */,
+				ACA4F2AF25825C1000CA0609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4F2B025825C1000CA0609 /* Build configuration list for PBXNativeTarget "TOpengl3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F2B125825C1000CA0609 /* Debug */,
+				ACA4F2B225825C1000CA0609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA4F2B325825C1000CA0609 /* Build configuration list for PBXNativeTarget "TOpengl3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACA4F2B425825C1000CA0609 /* Debug */,
+				ACA4F2B525825C1000CA0609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACA4F27B25825C0D00CA0609 /* Project object */;
+}
